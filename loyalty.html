@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet</title>
+    <link rel="stylesheet" href="./loyalty.css"> 
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#454545">
+    <meta name="msapplication-TileColor" content="#00a300">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="./index.html"><img src="./img/logo.png" alt="Supermarket logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./new about us.html">About Us</a></li>
+                    <li><a href="./product.html">Products</a></li>
+                    <li><a href="./order.html">order</a></li>
+                    <li><a href="./loyalty.html">Loyalty</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="cart-icon">
+                    <a href="#cart">🛒</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="registration-form">
+            <h2>Register for our Loyalty Program</h2>
+            <form action="submit.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="loyaltyScheme">Choose a Loyalty Scheme:</label>
+                <select id="loyaltyScheme" name="loyaltyScheme" required>
+                    <option value="gold">Gold</option>
+                    <option value="silver">Silver</option>
+                    <option value="bronze">Bronze</option>
+                </select>
+                
+                <button type="submit">Register</button>
+            </form>
+        </section>
+        
+        <section id="loyalty-benefits">
+            <h2>Loyalty Scheme Benefits</h2>
+            <ul>
+                <li>Gold: 10% discount on all purchases</li>
+                <li>Silver: 5% discount on all purchases</li>
+                <li>Bronze: Exclusive access to events</li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>We are your one-stop shop for all your grocery needs. With a wide range of products, excellent customer service, and convenient delivery options, we strive to make your shopping experience enjoyable and hassle-free.</p>
+            </div>
+            <div class="footer-section quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./new about us.html">About Us</a></li>
+                    <li><a href="./product.html">Products</a></li>
+                    <li><a href="./order.html">order</a></li>
+                    <li><a href="./loyalty.html">Loyalty</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Email: info@grocerystore.com</li>
+                    <li>Phone: 0771232228</li>
+                    <li>Address: 123 Grocery Street, City, Country</li>
+                </ul>
+            </div>
+            <div class="footer-section follow-us">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="./img/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="./img/twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="./img/insta.png" alt="Instagram"></a>
+                    <a href="#"><img src="./img/link.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Grocery Store. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

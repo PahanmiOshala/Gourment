@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet</title>
+    <link rel="stylesheet" href="./order.css">
+    <script defer src="./order.js"></script>
+    <link rel="preconnect" href="./https://fonts.googleapis.com">
+    <link rel="preconnect" href="./https://fonts.gstatic.com" crossorigin>
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#454545">
+    <meta name="msapplication-TileColor" content="#00a300">
+    <meta name="theme-color" content="#ffffff">
+    <link href="./https://fonts.googleapis.com/css2?family=Concert+One&family=Poetsen+One&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="./index.html"><img src="./img/logo.png" alt="Supermarket logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./new about us.html">About Us</a></li>
+                    <li><a href="./product.html">Products</a></li>
+                    <li><a href="./order.html">order</a></li>
+                    <li><a href="./loyalty.html">Loyalty</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="cart-icon">
+                    <a href="#cart">🛒</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="order-section">
+            <h2>Order Groceries</h2>
+            <form id="order-form" action="#" method="post">
+                <div class="form-group">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </fieldset>
+                </div>
+
+                <div class="form-group">
+                    <fieldset>
+                        <legend>Delivery Information</legend>
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="address" required>
+                        <label for="city">City:</label>
+                        <input type="text" id="city" name="city" required>
+                        <label for="zip">ZIP Code:</label>
+                        <input type="text" id="zip" name="zip" required>
+                    </fieldset>
+                </div>
+
+                <div class="form-group">
+                    <fieldset>
+                        <legend>Order Details</legend>
+                        <div class="order-category">
+                            <h3>Fruits</h3>
+                            <label for="fruit-select">Choose a fruit:</label>
+                            <select id="fruit-select" name="fruit">
+                                <option value="">--Select a fruit--</option>
+                                <option value="apples">Apples</option>
+                                <option value="bananas">Bananas</option>
+                            </select>
+                            <label for="fruit-quantity">Quantity (Kg):</label>
+                            <input type="number" id="fruit-quantity" name="fruit-quantity" min="0" step="0.1" disabled>
+                        </div>
+
+                        <div class="order-category">
+                            <h3>Vegetables</h3>
+                            <label for="vegetable-select">Choose a vegetable:</label>
+                            <select id="vegetable-select" name="vegetable">
+                                <option value="">--Select a vegetable--</option>
+                                <option value="carrots">Carrots</option>
+                                <option value="broccoli">Broccoli</option>
+                            </select>
+                            <label for="vegetable-quantity">Quantity (Kg):</label>
+                            <input type="number" id="vegetable-quantity" name="vegetable-quantity" min="0" step="0.1" disabled>
+                        </div>
+
+                        <div class="order-category">
+                            <h3>Dairy Produce</h3>
+                            <label for="dairy-select">Choose a dairy product:</label>
+                            <select id="dairy-select" name="dairy">
+                                <option value="">--Select a dairy product--</option>
+                                <option value="milk">Milk</option>
+                                <option value="cheese">Cheese</option>
+                            </select>
+                            <label for="dairy-quantity">Quantity (Liters or Qty):</label>
+                            <input type="number" id="dairy-quantity" name="dairy-quantity" min="0" step="0.1" disabled>
+                        </div>
+
+                        <div class="order-category">
+                            <h3>Cosmetics</h3>
+                            <label for="cosmetics-select">Choose a cosmetic product:</label>
+                            <select id="cosmetics-select" name="cosmetics">
+                                <option value="">--Select a cosmetic product--</option>
+                                <option value="lipstick">Lipstick</option>
+                                <option value="mascara">Mascara</option>
+                            </select>
+                            <label for="cosmetics-quantity">Quantity:</label>
+                            <input type="number" id="cosmetics-quantity" name="cosmetics-quantity" min="0" disabled>
+                        </div>
+
+                        <div class="order-category">
+                            <h3>Skin Care</h3>
+                            <label for="skincare-select">Choose a skin care product:</label>
+                            <select id="skincare-select" name="skincare">
+                                <option value="">--Select a skin care product--</option>
+                                <option value="moisturizer">Moisturizer</option>
+                                <option value="sunscreen">Sunscreen</option>
+                            </select>
+                            <label for="skincare-quantity">Quantity:</label>
+                            <input type="number" id="skincare-quantity" name="skincare-quantity" min="0" disabled>
+                        </div>
+
+                    </fieldset>
+                </div>
+
+                <div class="form-group">
+                    <fieldset>
+                        <legend>Payment Information</legend>
+                        <label for="card-name">Name on Card:</label>
+                        <input type="text" id="card-name" name="card-name" required>
+                        <label for="card-number">Card Number:</label>
+                        <input type="text" id="card-number" name="card-number" required>
+                        <label for="expiry-date">Expiry Date:</label>
+                        <input type="month" id="expiry-date" name="expiry-date" required>
+                        <label for="cvv">CVV:</label>
+                        <input type="text" id="cvv" name="cvv" required>
+                    </fieldset>
+                </div>
+
+                <button type="submit">Submit Order</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>We are your one-stop shop for all your grocery needs. With a wide range of products, excellent customer service, and convenient delivery options, we strive to make your shopping experience enjoyable and hassle-free.</p>
+            </div>
+            <div class="footer-section quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms of Service</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Email: info@grocerystore.com</li>
+                    <li>Phone: 0771232228</li>
+                    <li>Address: 123 Grocery Street, City, Country</li>
+                </ul>
+            </div>
+            <div class="footer-section follow-us">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                    <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Grocery Store. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
